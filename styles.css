@@ -30,6 +30,8 @@ body {
     radial-gradient(circle at bottom right, rgba(168, 85, 247, 0.14), transparent 25%),
     var(--bg);
   color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 img {
   max-width: 100%;
@@ -40,7 +42,7 @@ a {
   font: inherit;
 }
 .container {
-  width: min(1200px, calc(100% - 2rem));
+  width: min(1200px, calc(100% - 1.5rem));
   margin: 0 auto;
 }
 .page-bg {
@@ -86,7 +88,7 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  padding: 1rem 0;
+  padding: 0.9rem 0;
 }
 .brand {
   font-size: 0.95rem;
@@ -671,43 +673,115 @@ h1 {
   .project-hero {
     grid-template-columns: 1fr;
   }
+
   .results-grid {
     grid-template-columns: 1fr;
   }
 }
 @media (max-width: 700px) {
-  .model-diagram {
-    grid-template-columns: 1fr;
-  }
-  .diagram-arrow {
-    display: none;
-  }
   .topbar-inner {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.75rem;
   }
+
   .nav-links {
     width: 100%;
     justify-content: flex-start;
+    gap: 0.9rem 1rem;
   }
+
+  .hero {
+    padding: 3.25rem 0 2.5rem;
+  }
+
   .hero-details {
     grid-template-columns: 1fr;
   }
+
   .hero-actions {
     flex-direction: column;
   }
+
   .button {
     width: 100%;
+    min-height: 44px;
   }
-  .contact-list div {
+
+  .section {
+    padding: 3rem 0;
+  }
+
+  .section h2 {
+    font-size: clamp(1.7rem, 5vw, 2.2rem);
+  }
+
+  .hero-overlay {
+    inset: auto 0.8rem 0.8rem 0.8rem;
+    padding: 0.85rem 1rem;
+  }
+
+  .hero-media {
+    min-height: 220px;
+  }
+
+  .contact-item {
     flex-wrap: wrap;
+  }
+
+  .contact-label {
+    min-width: 0;
+  }
+
+  .model-diagram {
+    grid-template-columns: 1fr;
+  }
+
+  .diagram-arrow {
+    display: none;
   }
 }
 @media (max-width: 520px) {
-  .hero {
-    padding-top: 3rem;
+  .container {
+    width: min(100%, calc(100% - 1rem));
   }
+
+  .brand {
+    font-size: 0.85rem;
+  }
+
+  .nav-links a {
+    font-size: 0.95rem;
+  }
+
+  .hero-card-inner,
+  .timeline-item,
+  .card,
+  .skill-card,
+  .contact-card,
+  .card-panel {
+    padding: 1.2rem;
+  }
+
+  .hero-overlay h3 {
+    font-size: 1.1rem;
+  }
+
+  .summary-tags {
+    gap: 0.55rem;
+  }
+
+  .summary-tags span {
+    font-size: 0.8rem;
+    padding: 0.35rem 0.7rem;
+  }
+
+  .social-link {
+    width: 38px;
+    height: 38px;
+  }
+
   .section {
-    padding: 3.5rem 0;
+    padding: 2.75rem 0;
   }
 }
