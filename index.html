@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="ambient ambient-1"></div>
+  <div class="ambient ambient-2"></div>
   <div class="page-bg"></div>
   <header class="topbar">
     <div class="container topbar-inner">
@@ -26,9 +28,9 @@
   </header>
 
   <main>
-    <section class="hero" id="about">
+    <section class="hero reveal" id="about">
       <div class="container hero-grid">
-        <div class="hero-copy">
+        <div class="hero-copy reveal">
           
           <h1>Hi, I'm Omar Ashraf Hassan</h1>
           <p class="hero-text">A data scientist and machine learning engineer specializing in predictive analytics, AI-powered decision support, and end-to-end model development.</p>
@@ -48,22 +50,17 @@
           </div>
         </div>
 
-        <aside class="hero-card">
+        <aside class="hero-card reveal">
           <div class="hero-card-inner">
             <h2>Professional Summary</h2>
             <p>Experienced in building ML models, processing complex datasets, and delivering actionable insights with Python, TensorFlow, and analytics tools.</p>
-            <div class="contact-list">
-              <div><span>Email</span><a href="mailto:eng.omar0@outlook.com" class="social-link" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></div>
-              <div><span>Phone</span><a href="tel:+971502365567" class="social-link" aria-label="Phone"><i class="fa-solid fa-phone"></i></a></div>
-              <div><span>LinkedIn</span><a href="https://www.linkedin.com/in/omar-ashraf-808455284/" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></div>
-              <div><span>GitHub</span><a href="https://github.com/C4GK" target="_blank" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div>
-            </div>
+            <ul class="contact-list" data-contact-links></ul>
           </div>
         </aside>
       </div>
     </section>
 
-    <section class="section" id="experience">
+    <section class="section reveal" id="experience">
       <div class="container section-grid">
         <div>
           <span class="section-label">Experience</span>
@@ -95,15 +92,15 @@
       </div>
     </section>
 
-    <section class="section bg-surface" id="projects">
+    <section class="section bg-surface reveal" id="projects">
       <div class="container">
         <span class="section-label">Projects</span>
         <h2>Brain Tumor Detection Using AI</h2>
 
         <div class="project-showcase">
-          <article class="project-hero card-panel">
+          <article class="project-hero card-panel reveal">
             <div class="hero-media">
-              <img src="head.jpg" alt="MRI scan prediction with confidence bar" />
+              <img src="head.jpg" alt="MRI scan prediction with confidence bar" loading="lazy" decoding="async" />
               <div class="hero-overlay">
                 
                 <h3>AI Brain Tumor Detection</h3>
@@ -127,7 +124,7 @@
               <p>The dataset includes multiple classes: glioma, meningioma, pituitary, and no tumor.</p>
             </div>
             <div class="centered-image">
-              <img src="class%20train.png" alt="Dataset distribution chart for training classes" />
+              <img src="class%20train.png" alt="Dataset distribution chart for training classes" loading="lazy" decoding="async" />
             </div>
           </section>
 
@@ -152,11 +149,11 @@
             </div>
             <div class="results-grid">
               <figure class="result-card">
-                <img src="2.png" alt="MRI prediction example detecting glioma" />
+                <img src="2.png" alt="MRI prediction example detecting glioma" loading="lazy" decoding="async" />
                 <figcaption>Example 1 – Glioma Detected</figcaption>
               </figure>
               <figure class="result-card">
-                <img src="1.png" alt="MRI prediction example showing no tumor" />
+                <img src="1.png" alt="MRI prediction example showing no tumor" loading="lazy" decoding="async" />
                 <figcaption>Example 2 – No Tumor </figcaption>
               </figure>
             </div>
@@ -168,14 +165,14 @@
               <p>Accuracy and loss were tracked across training epochs to monitor stable learning behavior.</p>
             </div>
             <div class="chart-card">
-              <img src="model%20traning.png" alt="Accuracy and loss chart during model training" />
+              <img src="model%20traning.png" alt="Accuracy and loss chart during model training" loading="lazy" decoding="async" />
             </div>
           </section>
         </div>
       </div>
     </section>
 
-    <section class="section" id="education">
+    <section class="section reveal" id="education">
       <div class="container section-grid">
         <div>
           <span class="section-label">Education</span>
@@ -201,7 +198,7 @@
       </div>
     </section>
 
-    <section class="section bg-surface">
+    <section class="section bg-surface reveal">
       <div class="container">
         <div class="skills-intro">
           <span class="section-label">Skills</span>
@@ -209,36 +206,83 @@
           <p>Strong expertise in ML frameworks, data engineering, and analytical tools used in production workflows.</p>
         </div>
         <div class="skills-grid">
-          <div class="skill-card"><strong>Programming</strong><p>Python, Git, CLI, REST APIs</p></div>
-          <div class="skill-card"><strong>ML Frameworks</strong><p>TensorFlow, PyTorch, Scikit-Learn</p></div>
-          <div class="skill-card"><strong>Data Tools</strong><p>Pandas, Matplotlib, Seaborn, SQL, Power BI, Excel</p></div>
-          <div class="skill-card"><strong>Domains</strong><p>Machine Learning, Deep Learning, NLP, Computer Vision</p></div>
-          <div class="skill-card"><strong>Soft Skills</strong><p>Problem Solving, Communication, Teamwork, Adaptability</p></div>
+          <div class="skill-card reveal"><strong>Programming</strong><p>Python, Git, CLI, REST APIs</p></div>
+          <div class="skill-card reveal"><strong>ML Frameworks</strong><p>TensorFlow, PyTorch, Scikit-Learn</p></div>
+          <div class="skill-card reveal"><strong>Data Tools</strong><p>Pandas, Matplotlib, Seaborn, SQL, Power BI, Excel</p></div>
+          <div class="skill-card reveal"><strong>Domains</strong><p>Machine Learning, Deep Learning, NLP, Computer Vision</p></div>
+          <div class="skill-card reveal"><strong>Soft Skills</strong><p>Problem Solving, Communication, Teamwork, Adaptability</p></div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="contact">
+    <section class="section reveal" id="contact">
       <div class="container contact-grid-outer">
         <div>
           <span class="section-label">Contact</span>
           <h2>Let’s build solutions together</h2>
           <p>Available for freelance and full-time opportunities in data science, AI engineering, and analytics.</p>
         </div>
-        <div class="contact-card">
-          <div><span>Email</span><a href="mailto:eng.omar@outlook.com" class="social-link" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></div>
-          <div><span>Phone</span><a href="tel:+971502365567" class="social-link" aria-label="Phone"><i class="fa-solid fa-phone"></i></a></div>
-          <div><span>LinkedIn</span><a href="https://www.linkedin.com/in/omar-ashraf-808455284/" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></div>
-          <div><span>GitHub</span><a href="https://github.com/C4GK" target="_blank" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div>
-        </div>
+        <div class="contact-card reveal" data-contact-links></div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer reveal">
     <div class="container footer-inner">
       <p>© 2026 Built by Omar Ashraf Hassan.</p>
     </div>
   </footer>
+  <script>
+    const contactLinks = [
+      { label: 'Email', href: 'mailto:eng.omar0@outlook.com', icon: 'fa-solid fa-envelope', ariaLabel: 'Email' },
+      { label: 'Phone', href: 'tel:+971502365567', icon: 'fa-solid fa-phone', ariaLabel: 'Phone' },
+      { label: 'LinkedIn', href: 'https://www.linkedin.com/in/omar-ashraf-808455284/', icon: 'fa-brands fa-linkedin-in', ariaLabel: 'LinkedIn', external: true },
+      { label: 'GitHub', href: 'https://github.com/C4GK', icon: 'fa-brands fa-github', ariaLabel: 'GitHub', external: true }
+    ];
+
+    const renderContactLinks = () => {
+      const targets = document.querySelectorAll('[data-contact-links]');
+
+      targets.forEach((target) => {
+        const markup = contactLinks.map(({ label, href, icon, ariaLabel, external }) => `
+          <li class="contact-item">
+            <span class="contact-label">${label}</span>
+            <a
+              class="social-link"
+              href="${href}"
+              aria-label="${ariaLabel}"
+              ${external ? 'target="_blank" rel="noopener noreferrer"' : ''}
+            >
+              <i class="${icon}"></i>
+            </a>
+          </li>
+        `).join('');
+
+        target.innerHTML = markup;
+      });
+    };
+
+    const revealElements = document.querySelectorAll('.reveal');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (revealElements.length) {
+      if (prefersReducedMotion) {
+        revealElements.forEach((element) => element.classList.add('is-visible'));
+      } else {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.14, rootMargin: '0px 0px -40px 0px' });
+
+        revealElements.forEach((element) => observer.observe(element));
+      }
+    }
+
+    renderContactLinks();
+  </script>
 </body>
 </html>
